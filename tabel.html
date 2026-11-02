@@ -1,0 +1,209 @@
+<html>
+    <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            table,th,td{
+                border:1px solid black;
+            }
+            th{
+                background-color:aqua;
+            }
+            td{
+                background-color: bisque;
+            }
+         </style>
+    </head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form onsubmit="alert('Form berhasil diisi!'); return false;"></form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="melda"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="putri"><br><br>
+  <label for="lname">Password:</label><br>
+  <input type="Password" id="lname" name="lname" value="putri"><br><br>
+  <label for="lname">instagram:</label><br>
+  <input type="text" id="instagram" name="instagram" value="@cis.cake"><br><br>
+   <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <input type="radio" id="melda" name="fav_language" value="melda">
+  <label for="melda">melda</label><br><br>
+
+   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br>
+<label for="cars">Choose a car:</label>
+
+<select name="MOBILKU" id="MOBILKU">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="toyota">toyota</option>
+  <option value="BMW">BMW</option>
+</select><br>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table><br>
+
+  <input type="submit" value="Submit">
+
+ 
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<style>
+    .tabel-mahasiswa {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabel-mahasiswa th {
+        background: linear-gradient(90deg, #4f46e5, #7c3aed);
+        color: white;
+        padding: 12px;
+    }
+
+    .tabel-mahasiswa td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tabel-mahasiswa tbody tr:nth-child(even) {
+        background-color: #f0f0ff;
+    }
+
+    .tabel-mahasiswa tbody tr:hover {
+        background-color: #dddfff;
+    }
+
+    .btn-primary {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<h2 style="text-align: center; color: #4f46e5;">
+    Data Mahasiswa
+</h2>
+
+<table class="tabel-mahasiswa">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>No HP</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Melda Amelia Putri</td>
+            <td>WN20625018</td>
+            <td>081342358626</td>
+            <td>
+                <button type="button" class="btn-primary">Primary</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Raditha Aulia Cahyani</td>
+            <td>WN20625013</td>
+            <td>08123456789</td>
+            <td>
+                <button type="button" class="btn-primary">Primary</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Anastasya Refani</td>
+            <td>WN20625002</td>
+            <td>08976624315</td>
+            <td>
+                <button type="button" class="btn-primary">Primary</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Aurel Inkha</td>
+            <td>WN20625003</td>
+            <td>08336261965</td>
+            <td>
+                <button type="button" class="btn-danger">Danger</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Azmi Azizah</td>
+            <td>WN20625004</td>
+            <td>08975136345</td>
+            <td>
+                <button type="button" class="btn-primary">Primary</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Nurdianti</td>
+            <td>WN20625012</td>
+            <td>086450122478</td>
+            <td>
+                <button type="button" class="btn-primary">Primary</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
